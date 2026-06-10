@@ -1,0 +1,20 @@
+# IDE - Chặn thư mục cấu hình cá nhân
+.idea/
+.metadata/
+.settings/
+.project
+.classpath
+
+# Build - Chặn các file đã biên dịch (Nặng và không cần thiết)
+bin/
+out/
+target/
+*.class
+
+# OS - File rác của Windows
+Thumbs.db
+desktop.ini
+
+# Temp
+*.tmp
+*.log

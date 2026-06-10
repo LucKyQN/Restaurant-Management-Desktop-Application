@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhà Hàng Ngói Đỏ - Tinh Hoa Ẩm Thực Việt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav id="navbar">
+        <a href="#" class="logo">🏮 Ngói Đỏ</a>
+        <ul class="nav-links">
+            <li><a href="#home">Trang chủ</a></li>
+            <li><a href="#about">Giới thiệu</a></li>
+            <li><a href="#menu">Thực đơn</a></li>
+            <li><button class="btn-primary" id="btn-booking-nav">Đặt Bàn Ngay</button></li>
+        </ul>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <h1>Tinh Hoa Ẩm Thực Việt</h1>
+            <p>Không gian ấm cúng, hương vị truyền thống kết hợp phong cách phục vụ hiện đại. Trải nghiệm ngay bữa ăn
+                tuyệt vời cùng gia đình và người thân.</p>
+            <button class="btn-primary btn-large" id="btn-explore">Đặt Bàn</button>
+        </div>
+    </header>
+
+    <section id="about">
+        <h2 class="section-title">Về Chúng Tôi</h2>
+        <div class="about-content">
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
+                    alt="Không gian nhà hàng Ngói Đỏ">
+            </div>
+            <div class="about-text">
+                <h3>Câu chuyện của Ngói Đỏ</h3>
+                <p>Khởi nguồn từ niềm đam mê lưu giữ những hương vị mộc mạc của quê hương, <strong>Nhà Hàng Ngói
+                        Đỏ</strong> mang đến cho thực khách một thực đơn phong phú với các món ăn mang đậm bản sắc Việt
+                    Nam.</p>
+                <p>Với không gian rộng rãi, thoáng mát nhưng không kém phần sang trọng, hệ thống phòng VIP riêng tư,
+                    chúng tôi tự hào là điểm đến lý tưởng cho các buổi tiệc gia đình, gặp gỡ đối tác hay liên hoan công
+                    ty.</p>
+                <p>Sự hài lòng của quý khách chính là thước đo thành công của chúng tôi!</p>
+            </div>
+        </div>
+    </section>
+    <section id="menu" class="bg-white">
+        <h2 id="menu-title" class="section-title">Món Ngon Nổi Bật</h2>
+
+        <div id="featured-menu">
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <img src="img/ganuongmuoiot.jpg" alt="Gà Nướng Muối Ớt">
+                    <div class="menu-info">
+                        <h3>Gà Nướng Muối Ớt</h3>
+                        <p>Gà đồi thả vườn nướng than hoa vàng ruộm, tẩm ướp mật ong rừng thơm lừng.</p>
+                        <div class="menu-price">280.000 đ</div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="img/lauthai.jpg" alt="Lẩu Thái Chua Cay">
+                    <div class="menu-info">
+                        <h3>Lẩu Thái Chua Cay</h3>
+                        <p>Nước lẩu chua cay đậm đà, ăn kèm hải sản tươi sống nhập mới mỗi ngày.</p>
+                        <div class="menu-price">300.000 đ</div>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="img/boluclac.jpg" alt="Bò Lúc Lắc">
+                    <div class="menu-info">
+                        <h3>Bò Lúc Lắc</h3>
+                        <p>Thịt bò mềm mọng, đậm vị sốt tiêu đen ăn kèm khoai tây chiên giòn rụm.</p>
+                        <div class="menu-price">120.000 đ</div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 40px;">
+                <button id="btn-view-all" class="btn-primary btn-large">Xem Tất Cả</button>
+            </div>
+        </div>
+
+        <div id="full-menu" class="hidden">
+            <div class="menu-filters">
+                <button class="filter-btn active" data-filter="all">Tất cả</button>
+                <button class="filter-btn" data-filter="khai-vi">Món khai vị</button>
+                <button class="filter-btn" data-filter="mon-chinh">Món chính</button>
+                <button class="filter-btn" data-filter="do-uong">Đồ uống</button>
+                <button class="filter-btn" data-filter="trang-mieng">Tráng miệng</button>
+            </div>
+
+            <div class="menu-grid full-grid">
+
+                <div class="menu-item full-item" data-category="khai-vi">
+                    <img src="img/goingosentomthit.jpg" alt="Món 1">
+                    <div class="menu-info">
+                        <span class="category-tag">Món khai vị</span>
+                        <h3>Gỏi ngó sen tôm thịt</h3>
+                        <div class="menu-price-green">120.000 đ</div>
+                        <p>Ngó sen giòn rụm trộn cùng tôm, thịt luộc thái mỏng, mang vị chua ngọt hài hòa</p>
+                    </div>
+                </div>
+                <div class="menu-item full-item" data-category="khai-vi">
+                    <img src="img/goicuon.jpeg" alt="Món 2">
+                    <div class="menu-info">
+                        <span class="category-tag">Món khai vị</span>
+                        <h3>Gỏi cuốn tôm thịt</h3>
+                        <div class="menu-price-green">45.000 đ</div>
+                        <p>Món cuốn thanh mát gồm tôm, thịt lợn luộc, bún và rau sống cuộn trong bánh tráng, dùng kèm
+                            với tương đậu phộng đậm đà</p>
+                    </div>
+                </div>
+                <div class="menu-item full-item" data-category="khai-vi">
+                    <img src="img/chagio.jpg" alt="Món 3">
+                    <div class="menu-info">
+                        <span class="category-tag">Món khai vị</span>
+                        <h3>Chả giò chiên giòn</h3>
+                        <div class="menu-price-green">55.000 đ</div>
+                        <p>Lớp vỏ bánh tráng chiên vàng giòn rụm bao bọc nhân thịt băm, nấm mèo và khoai môn thơm ngon,
+                            đậm vị</p>
+                    </div>
+                </div>
+                <div class="menu-item full-item" data-category="khai-vi">
+                    <img src="img/supcuagaxe.jpeg" alt="Món 4">
+                    <div class="menu-info">
+                        <span class="category-tag">Món khai vị</span>
+                        <h3>Súp cua gà xé</h3>
+                        <div class="menu-price-green">80.000 đ</div>
+                        <p>Súp nóng hổi, sền sệt đậm đà với thịt cua ngọt thanh, nấm hương và gà xé sợi</p>
+                    </div>
+                </div>
+                <div class="menu-item full-item" data-category="khai-vi">
+                    <img src="img/khoaitaychienbotoi.jpg" alt="Món 5">
+                    <div class="menu-info">
+                        <span class="category-tag">Món khai vị</span>
+                        <h3>Khoai tây chiên bơ tỏi</h3>
+                        <div class="menu-price-green">90.000 đ</div>
+                        <p>Khoai tây cắt lát chiên giòn rụm, áo đều lớp bơ tỏi thơm lừng, xóc muối đậm vị</p>
+                    </div>
+                </div>
+                <div class="menu-item full-item" data-category="khai-vi">
+                    <img src="img/saladcangu.jpg" alt="Món 6">
+                    <div class="menu-info">
+                        <span class="category-tag">Món khai vị</span>
+                        <h3>Salad cá ngừ</h3>
+                        <div class="menu-price-green">50.000 đ</div>
+                        <p>Rau xà lách tươi mát trộn cùng cá ngừ ngâm dầu và sốt mè rang béo ngậy</p>
+                    </div>
+                </div>
+
+                <div class="menu-item full-item" data-category="mon-chinh">
+                    <img src="img/ganuongmuoiot.jpg" alt="Món 1">
+                    <div class="menu-info">
+                        <span class="category-tag">Món chính</span>
+                        <h3>Gà nướng muối ớt</h3>
+                        <div class="menu-price-green">280.000 đ</div>
+                        <p>Lớp da gà nướng vàng giòn, phần thịt bên trong thấm vị cay mặn đậm đà của muối ớt.</p>
+                    </div>
+                </div>
+                <div class="menu-item full-item" data-category="mon-chinh">
+                    <img src="img/lauthai.jpg" alt="Món 2">
+                    <div class="menu-info">
+                        <span class="category-tag">Món chính</span>
+                        <h3>Lẩu Thái chua cay</h3>
+                        <div class="menu-price-green">300.000 đ</div>
+                        <p>Nước dùng vị tom yum đặc trưng, nhúng kèm đa dạng các loại hải sản tươi sống và nấm</p>
+                    </div>
+                </div>
+                <div class="menu-item full-item" data-category="mon-chinh">
+                    <img src="img/boluclac.jpg" alt="Món 3">
+                    <div class="menu-info">
+                        <span class="category-tag">Món chính</span>
+                        <h3>Bò lúc lắc khoai tây</h3>
+                        <div class="menu-price-green">150.000 đ</div>
+                        <p>Thịt bò thái khối vuông áp chảo xém cạnh, giữ được độ mềm mọng bên trong, ăn kèm xà lách, cà
+                            chua và khoai tây chiên</p>
+                    </div>
+                </div>
+                <div class="menu-item full-item" data-category="mon-chinh">
+                    <img src="img/comchienduongchau.jpg" alt="Món 4">
+                    <div class="menu-info">
+                        <span class="category-tag">Món chính</span>
+                        <h3>Cơm Chiên Dương Châu</h3>
+                        <div class="menu-price-green">180.000 đ</div>
+                        <p>Món cơm chiên tơi xốp, rực rỡ sắc màu với sự kết hợp của tôm, lạp xưởng, trứng và các loại
+                            rau củ thái lựu</p>
+                    </div>
+                </div>
+                <div class="menu-item full-item" data-category="mon-chinh">
+                    <img src="img/phobo.jpg" alt="Món 5">
+                    <div class="menu-info">
+                        <span class="category-tag">Món chính</span>
+                        <h3>Phở Bò</h3>
+                        <div class="menu-price-green">160.000 đ</div>
+                        <p>Món ăn truyền thống nổi tiếng với nước dùng từ xương hầm thanh ngọt, bánh phở mềm dai cùng
+                            những lát thịt bò tươi ngon</p>
+                    </div>
+                </div>
+                <div class="menu-item full-item" data-category="mon-chinh">
+                    <img src="img/lauech.jpg" alt="Món 6">
+                    <div class="menu-info">
+                        <span class="category-tag">Món chính</span>
+                        <h3>Lẩu Ếch</h3>
+                        <div class="menu-price-green">320.000 đ</div>
+                        <p>Lẩu ếch nóng hổi vị chua cay đặc trưng, kèm thịt ếch xào măng đậm vị</p>
+                    </div>
+                </div>
+                <div class="menu-item full-item" data-category="mon-chinh">
+                    <img src="img/lauchay.jpg" alt="Món 7">
+                    <div class="menu-info">
+                        <span class="category-tag">Món chính</span>
+                        <h3>Lẩu Chay</h3>
+                        <div class="menu-price-green">120.000 đ</div>
+                        <p>Món lẩu thanh đạm, giàu dinh dưỡng với nước hầm rau củ, tàu hũ ky và nấm ngọt thanh, nhẹ bụng
+                        </p>
+                    </div>
+                </div>
+                <div class="menu-item full-item" data-category="mon-chinh">
+                    <img src="img/tomchiengion.jpeg" alt="Món 8">
+                    <div class="menu-info">
+                        <span class="category-tag">Món chính</span>
+                        <h3>Tôm Chiên Giòn</h3>
+                        <div class="menu-price-green">160.000 đ</div>
+                        <p>Tôm tươi phủ lớp bột chiên vàng rụm, vỏ ngoài giòn tan, thịt tôm bên trong ngọt nước.</p>
+                    </div>
+                </div>
+                <div class="menu-item full-item" data-category="mon-chinh">
+                    <img src="img/cachemsotcam.jpg" alt="Món 9">
+                    <div class="menu-info">
+                        <span class="category-tag">Món chính</span>
+                        <h3>Cá Chẽm Sốt Cam</h3>
+                        <div class="menu-price-green">140.000 đ</div>
+                        <p>Phi lê cá chiên giòn rụm bên ngoài, rưới đẫm nước sốt cam tươi chua ngọt thanh dịu.</p>
+                    </div>
+                </div>
+                <div class="menu-item full-item" data-category="mon-chinh">
+                    <img src="img/heorungxaolan.jpg" alt="Món 10">
+                    <div class="menu-info">
+                        <span class="category-tag">Món chính</span>
+                        <h3>Heo rừng xào lăn</h3>
+                        <div class="menu-price-green">270.000 đ</div>
+                        <p>Một món ăn truyền thống Việt Nam, nổi bật với hương vị thơm ngon và dinh dưỡng cao</p>
+                    </div>
+                </div>
+
+                <div class="menu-item full-item" data-category="do-uong">
+                    <img src="img/biatiger.jpg" alt="Đồ uống 1">
+                    <div class="menu-info">
+                        <span class="category-tag">Đồ uống</span>
+                        <h3>Bia Tiger</h3>
+                        <div class="menu-price-green">23.000 đ</div>
+                        <p>Thức uống giải khát có cồn mát lạnh, mang lại cảm giác sảng khoái tức thì</p>
+                    </div>
+                </div>
+                <div class="menu-item full-item" data-category="do-uong">
+                    <img src="img/tiger.jpg" alt="Đồ uống 2">
+                    <div class="menu-info">
+                        <span class="category-tag">Đồ uống</span>
+                        <h3>Bia Tiger Chai</h3>
+                        <div class="menu-price-green">28.000 đ</div>
+                        <p>Thức uống giải khát có cồn mát lạnh, mang lại cảm giác sảng khoái tức thì</p>
+                    </div>
+                </div>
+                <div class="menu-item full-item" data-category="do-uong">
+                    <img src="img/coca.jpg" alt="Đồ uống 3">
+                    <div class="menu-info">
+                        <span class="category-tag">Đồ uống</span>
+                        <h3>Coca Cola</h3>
+                        <div class="menu-price-green">15.000 đ</div>
+                        <p>Nước ngọt Coca cola</p>
+                    </div>
+                </div>
+                <div class="menu-item full-item" data-category="do-uong">
+                    <img src="img/pepsi.jpg" alt="Đồ uống 4">
+                    <div class="menu-info">
+                        <span class="category-tag">Đồ uống</span>
+                        <h3>Pepsi</h3>
+                        <div class="menu-price-green">15.000 đ</div>
+                        <p>Nước ngọt Pepsi</p>
+                    </div>
+                </div>
+                <div class="menu-item full-item" data-category="do-uong">
+                    <img src="img/trada.jpeg" alt="Đồ uống 5">
+                    <div class="menu-info">
+                        <span class="category-tag">Đồ uống</span>
+                        <h3>Trà đá</h3>
+                        <div class="menu-price-green">10.000 đ</div>
+                        <p>Trà đá mát lạnh</p>
+                    </div>
+                </div>
+                <div class="menu-item full-item" data-category="do-uong">
+                    <img src="img/tradao.jpg" alt="Đồ uống 6">
+                    <div class="menu-info">
+                        <span class="category-tag">Đồ uống</span>
+                        <h3>Trà đào</h3>
+                        <div class="menu-price-green">5.000 đ</div>
+                        <p>Thức uống thanh mát, chua ngọt hài hòa với điểm nhấn là những lát đào ngâm giòn sần sật</p>
+                    </div>
+                </div>
+                <div class="menu-item full-item" data-category="do-uong">
+                    <img src="img/mojitochanhbacha.jpg" alt="Đồ uống 7">
+                    <div class="menu-info">
+                        <span class="category-tag">Đồ uống</span>
+                        <h3>Mojito Chanh Bạc Hà</h3>
+                        <div class="menu-price-green">40.000 đ</div>
+                        <p>Thức uống sảng khoái mát lạnh với vị chua của chanh, the mát của bạc hà và soda sủi bọt</p>
+                    </div>
+                </div>
+                <div class="menu-item full-item" data-category="do-uong">
+                    <img src="img/nuocepduahau.jpg" alt="Đồ uống 8">
+                    <div class="menu-info">
+                        <span class="category-tag">Đồ uống</span>
+                        <h3>Nước ép dưa hấu</h3>
+                        <div class="menu-price-green">40.000 đ</div>
+                        <p>Thức uống giải khát tươi mát, mang vị ngọt thanh tự nhiên từ 100% trái cây tươi.</p>
+                    </div>
+                </div>
+                <div class="menu-item full-item" data-category="do-uong">
+                    <img src="img/cfsua.jpg" alt="Đồ uống 9">
+                    <div class="menu-info">
+                        <span class="category-tag">Đồ uống</span>
+                        <h3>Cà phê sữa đá</h3>
+                        <div class="menu-price-green">30.000 đ</div>
+                        <p>Hương vị đắng nhẹ đậm đà của cà phê phin truyền thống hòa quyện hoàn hảo cùng vị béo ngọt của
+                            sữa đặc</p>
+                    </div>
+                </div>
+
+                <div class="menu-item full-item" data-category="trang-mieng">
+                    <img src="img/kemvani.jpg" alt="Tráng miệng 1">
+                    <div class="menu-info">
+                        <span class="category-tag">Tráng miệng</span>
+                        <h3>Kem Vani</h3>
+                        <div class="menu-price-green">60.000 đ</div>
+                        <p>Món tráng miệng mát lạnh, chất kem dẻo mịn cùng hương thơm vani ngọt ngào, dịu nhẹ.</p>
+                    </div>
+                </div>
+                <div class="menu-item full-item" data-category="trang-mieng">
+                    <img src="img/banhflan.jpg" alt="Tráng miệng 2">
+                    <div class="menu-info">
+                        <span class="category-tag">Tráng miệng</span>
+                        <h3>Bánh Flan</h3>
+                        <div class="menu-price-green">25.000 đ</div>
+                        <p>Bánh flan mềm mịn thơm mùi caramel.</p>
+                    </div>
+                </div>
+                <div class="menu-item full-item" data-category="trang-mieng">
+                    <img src="img/chekhucbach.jpg" alt="Tráng miệng 3">
+                    <div class="menu-info">
+                        <span class="category-tag">Tráng miệng</span>
+                        <h3>Chè khúc bạch</h3>
+                        <div class="menu-price-green">30.000 đ</div>
+                        <p>Những viên khúc bạch sữa béo ngậy, núng nính trong nước đường phèn ngọt thanh cùng nhãn nhục.
+                        </p>
+                    </div>
+                </div>
+                <div class="menu-item full-item" data-category="trang-mieng">
+                    <img src="img/banhtiramisu.jpg" alt="Tráng miệng 4">
+                    <div class="menu-info">
+                        <span class="category-tag">Tráng miệng</span>
+                        <h3>Bánh Tiramisu</h3>
+                        <div class="menu-price-green">35.000 đ</div>
+                        <p>Món bánh ngọt mềm mịn, béo ngậy kem phô mai hòa quyện cùng hương cà phê và cacao đặc trưng.
+                        </p>
+                    </div>
+                </div>
+                <div class="menu-item full-item" data-category="trang-mieng">
+                    <img src="img/kemdua.jpg" alt="Tráng miệng 5">
+                    <div class="menu-info">
+                        <span class="category-tag">Tráng miệng</span>
+                        <h3>Kem dừa</h3>
+                        <div class="menu-price-green">40.000 đ</div>
+                        <p>Món kem đặc trưng với hương vị béo ngậy và thanh mát của nước cốt dừa, rất được ưa chuộng tại
+                            Việt Nam, đặc biệt trong những ngày nắng nóng</p>
+                    </div>
+                </div>
+                <div class="menu-item full-item" data-category="trang-mieng">
+                    <img src="img/suachuahatdac.jpg" alt="Tráng miệng 6">
+                    <div class="menu-info">
+                        <span class="category-tag">Tráng miệng</span>
+                        <h3>Sữa Chua Hạt Đác</h3>
+                        <div class="menu-price-green">60.000 đ</div>
+                        <p>Sữa chua sánh mịn có vị chua ngọt dịu nhẹ, ăn kèm hạt đác rim dai dẻo sần sật</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <h2>🏮 Nhà Hàng Ngói Đỏ</h2>
+            <p>📍 Địa chỉ: 123 Đường Trung Tâm, TP. Hồ Chí Minh</p>
+            <p>📞 Đặt bàn: 0123 456 789</p>
+            <p>✉ Email: ngoido@gmail.com</p>
+            <div class="copyright">
+                <p>&copy; 2026 Bản quyền thuộc về Hệ thống Nhà Hàng Ngói Đỏ.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
