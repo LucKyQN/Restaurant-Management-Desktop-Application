@@ -89,8 +89,8 @@ The default connection is configured in `ConnectDB.java`:
 
 ```
 URL:      jdbc:sqlserver://localhost:1433;databaseName=QuanLyNhaHang
-Username: sa
-Password: sapassword
+Username: sql_sever_username
+Password: sql_server_password
 ```
 
 > To change credentials, edit `src/connectDatabase/ConnectDB.java`.
